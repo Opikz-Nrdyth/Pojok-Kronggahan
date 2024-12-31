@@ -1,5 +1,5 @@
 <div>
-    <link rel="stylesheet" href="{{ asset('css/page-news.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/page-news.css') }}">
     <x-navbar />
     <main>
         <nav class="container">

@@ -16,8 +16,8 @@
             </div>
             <div class="chat {{ Auth::user()->name == $card->user->name ? 'chat-me' : 'chat-all' }}">
                 @if ($card->file_path)
-                    <img src="{{ config('app.url') }}/storage/{{ $card->file_path }}" alt="{{ $card->file_path }}"
-                        width="100%">
+                    <img src="{{ config('app.url') . env('APP_ROUTE_PUBLIC') }}/storage/{{ $card->file_path }}"
+                        alt="{{ $card->file_path }}" width="100%">
                 @endif
                 <p>
                     {{ $card->message }}
@@ -25,4 +25,5 @@
             </div>
         </div>
     </div>
+
 @endif

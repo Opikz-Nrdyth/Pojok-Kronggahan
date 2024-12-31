@@ -19,3 +19,8 @@ Git Upload:
     git branch -M main
     git remote add origin https://github.com/Opikz-Nrdyth/Pojok-Kronggahan.git
     git push -u origin main
+
+
+File yang dipindah dilihat di public
+
+antara lain css/, js/, build/, index.php, .htaccess

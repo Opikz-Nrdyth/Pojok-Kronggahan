@@ -6,8 +6,8 @@
             <div class="conatiner-news">
                 @foreach ($newinformation as $news)
                     <div class="news-item">
-                        <img src="{{ asset('storage/' . $news['thumbnail']) }}" alt="{{ $news['title'] }}" height="150"
-                            width="150" />
+                        <img src="{{ env('APP_ROUTE_PUBLIC') . asset('storage/' . $news['thumbnail']) }}"
+                            alt="{{ $news['title'] }}" height="150" width="150" />
                         <div class="news-content">
                             <div class="news-category">
                                 {{ $news['categories'] }}

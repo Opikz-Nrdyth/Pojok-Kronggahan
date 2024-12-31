@@ -37,7 +37,7 @@ class AdminPanelProvider extends PanelProvider
             ])
 
 
-            ->brandLogo(config('app.url') . '/storage/images/logo.svg')
+            ->brandLogo(config('app.url') . env('APP_ROUTE_PUBLIC') . '/storage/images/logo.svg')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([

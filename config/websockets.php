@@ -7,7 +7,14 @@ return [
     /*
      * Set a custom dashboard configuration
      */
+
+    'server' => [
+        'host' => env('WEBSOCKETS_HOST', '0.0.0.0'),
+        'port' => env('WEBSOCKETS_PORT', 6001),
+    ],
+
     'dashboard' => [
+        'host' => env('WEBSOCKETS_HOST', '0.0.0.0'),
         'port' => env('LARAVEL_WEBSOCKETS_PORT', 6001),
     ],
 

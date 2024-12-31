@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Pojok Kronggahan</title>
-    <link rel="icon" href="{{ config('app.url') . '/storage/images/logo.svg' }}">
+    <link rel="icon" href="{{ config('app.url') . env('APP_ROUTE_PUBLIC') . '/storage/images/logo.svg' }}">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/slideshow.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/live-chat.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/panduan.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/card.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/information.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/perhatian.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/welcome.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/slideshow.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/live-chat.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/panduan.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/card.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/about.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/information.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/perhatian.css') }}">
+    <link rel="stylesheet" href="{{ env('APP_ROUTE_PUBLIC') . asset('css/footer.css') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -44,8 +44,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/livewire@latest/dist/livewire.js"></script>
 
-    <script src="{{ asset('js/slideshow.js') }}"></script>
-    <script src="{{ asset('js/welcome.js') }}"></script>
+    <script src="{{ env('APP_ROUTE_PUBLIC') . asset('js/slideshow.js') }}"></script>
+    <script src="{{ env('APP_ROUTE_PUBLIC') . asset('js/welcome.js') }}"></script>
     @stack('scripts')
 </body>
 

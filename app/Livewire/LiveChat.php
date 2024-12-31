@@ -32,7 +32,7 @@ class LiveChat extends Component
         } else {
             // Fetch or create the public chat room
             $this->room = ChatRoom::firstOrCreate(
-                ['type' => 'service', 'name' => Auth::user()->name],
+                ['type' => 'service', 'name' => Auth::user()->name ?? ""],
                 ['user_id' => Auth::id() ?? 1]
             );
         }

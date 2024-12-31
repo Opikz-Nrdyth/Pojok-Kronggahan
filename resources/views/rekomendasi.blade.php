@@ -8,8 +8,8 @@
                     <div class="news">
                         <div class="news-item">
                             <a href="/news/{{ $news['id'] }}">
-                                <img src="{{ asset('storage/' . $news['thumbnail']) }}" alt="{{ $news['title'] }}"
-                                    height="150" width="150" />
+                                <img src="{{ env('APP_ROUTE_PUBLIC') . asset('storage/' . $news['thumbnail']) }}"
+                                    alt="{{ $news['title'] }}" height="150" width="150" />
                             </a>
                             <div class="news-content">
                                 <div class="news-category">

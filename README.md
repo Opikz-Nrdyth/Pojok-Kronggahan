@@ -1,7 +1,7 @@
 # Pojok Kronggahan News Website
 
 <div align="center">
-  <img src="https://opikstudio.my.id/logo_White.png" alt="Opik Studio Logo" width="200"/>
+  <img src="https://opikstudio.my.id/logo_White.png" alt="Opik Studio Logo" width="100"/>
   
   *Developed by Opik Studio*
 </div>

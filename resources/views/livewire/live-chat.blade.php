@@ -5,9 +5,16 @@
             <a href="live-chat"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
         <div class="messages">
-            @foreach ($messages as $message)
-                <x-live-chat :card="$message" />
-            @endforeach
+
+            @if (Auth::user())
+                @foreach ($messages as $message)
+                    <x-live-chat :card="$message" />
+                @endforeach
+            @else
+                <div class="chat-danger">
+                    <p>Harap Login Dahulu Untuk Menggunakan Fitur Ini</p>
+                </div>
+            @endif
         </div>
     </div>
     <!-- Input Area -->

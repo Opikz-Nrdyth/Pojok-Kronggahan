@@ -221,7 +221,7 @@
                                     <div class="message-user">{{ $message->user->name }}</div>
                                     <div class="message-body">
                                         @if ($message->file_path)
-                                            <img src="{{ config('app.url') }}/storage/{{ $message->file_path }}"
+                                            <img src="{{ config('app.url') . env('APP_ROUTE_PUBLIC') }}/storage/{{ $message->file_path }}"
                                                 alt="{{ $message->file_path }}" width="100%">
                                             <a href="{{ Storage::url($message->file_path) }}" target="_blank"
                                                 class="message-file">
