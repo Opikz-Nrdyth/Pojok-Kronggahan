@@ -8,7 +8,13 @@
 
 ## 📰 About Project
 
-Pojok Kronggahan adalah platform berita modern yang menggabungkan jurnalisme berkualitas dengan fitur interaktif yang inovatif. Website ini dikembangkan untuk memberikan pengalaman membaca berita dari desa kronggahan yang dinamis dan interaktif kepada penggunanya.
+Website **Pojok Kronggahan** adalah platform informasi yang didedikasikan untuk masyarakat Desa Kronggahan. Kami menyediakan berita terkini, fitur interaktif seperti global chat, dan layanan untuk mempermudah komunikasi antara warga dan admin.
+
+Melalui website ini, kami berharap dapat meningkatkan keterhubungan, transparansi, dan kemajuan Desa Kronggahan.
+
+-   **Misi:** Menyediakan informasi terpercaya untuk masyarakat.
+-   **Visi:** Mewujudkan Desa Kronggahan yang terhubung secara digital.
+-   **Fitur Utama:** Global Chat, Berita Terkini, dan Layanan Kontak Admin.
 
 ### 🌟 Fitur Utama
 
@@ -150,6 +156,7 @@ php artisan serve
 ## 📝 Lisensi
 
 Dikembangkan oleh [Opik Studio](https://opikstudio.my.id)
+Demo Website [Disini](https://pojok-kronggahan.opikstudio.my.id/)
 
 © 2024 Opik Studio. All rights reserved.
 
