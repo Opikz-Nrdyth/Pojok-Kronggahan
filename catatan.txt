@@ -1,7 +1,6 @@
 YANG BELUM!!!!
 
-6. Konek link di footer (15 Menit)
-
+   :)
 
 Sudah *
 1. Halaman Rekomendasi. Samakan dengan Info Terbaru (30 menit)
@@ -9,4 +8,14 @@ Sudah *
 3. Halaman Search dan fungsinya (1 jam)
 4. Live chat dan service (1 jam)
 5. Fetch to database (30 Menit)
+6. Konek link di footer (15 Menit)
 7. Signout di user (10 Menit)
+
+
+Git Upload:
+    git init
+    git add .
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/Opikz-Nrdyth/Pojok-Kronggahan.git
+    git push -u origin main
