@@ -1,0 +1,12 @@
+YANG BELUM!!!!
+
+6. Konek link di footer (15 Menit)
+
+
+Sudah *
+1. Halaman Rekomendasi. Samakan dengan Info Terbaru (30 menit)
+2. Detail Berita (15 menit)
+3. Halaman Search dan fungsinya (1 jam)
+4. Live chat dan service (1 jam)
+5. Fetch to database (30 Menit)
+7. Signout di user (10 Menit)

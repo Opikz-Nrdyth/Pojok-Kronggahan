@@ -1,0 +1,218 @@
+@import url("./app.css");
+
+.container-page-chat {
+    width: 70%;
+    margin: 15px 0px;
+    margin-left: 15%;
+}
+
+.container-chat {
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    padding: 15px !important;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buble-chat {
+    min-width: 20%;
+    max-width: 45%;
+    margin-top: 20px;
+}
+
+.buble-chat .user {
+    display: flex;
+    align-items: end;
+    gap: 5px;
+    margin: 2px 15px;
+    width: 100%;
+    font-size: 0.7em;
+}
+
+.messages {
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.buble-chat .user-me {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+.buble-chat .user .profile {
+    width: 15px;
+    height: 15px;
+    border-radius: 999px;
+    background-color: var(--secondary-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat {
+    width: 100%;
+    min-height: 0px;
+    padding: 3px 4px;
+    padding-bottom: 30px;
+}
+
+.container-chat-me {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.container-chat-all {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+.chat-me {
+    background: var(--secondary-light);
+    padding-right: 35px;
+    position: relative;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.chat-all {
+    background-color: var(--neutral);
+    padding-left: 30px;
+    position: relative;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.chat-me::after,
+.chat-all::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+    transform: rotate(45deg);
+}
+
+.chat-me::after {
+    right: -4px;
+}
+
+.chat-all::after {
+    left: -4px;
+}
+
+.input-file {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    cursor: pointer;
+    color: #0288d1;
+    font-size: 14px;
+}
+
+.file-name {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.input-area {
+    border-top: 1px solid #e5e7eb;
+    padding: 16px;
+}
+
+.input-form {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    gap: 8px;
+}
+
+.input-wrapper {
+    flex: 1;
+}
+
+.text-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.send-button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.send-button:hover {
+    background: var(--primary-dark);
+}
+
+.emoji-picker {
+    position: relative;
+}
+
+.emoji-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.emoji-list {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    z-index: 10;
+}
+
+.emoji-item {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .container-chat {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .buble-chat {
+        min-width: 60%;
+        max-width: 80%;
+    }
+}

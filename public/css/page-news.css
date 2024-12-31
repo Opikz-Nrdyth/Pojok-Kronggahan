@@ -1,0 +1,135 @@
+@import url("./app.css");
+
+.conatiner-news {
+    padding-top: 15px;
+}
+.news-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.news-item img {
+    width: 150px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.news-content {
+    display: flex;
+    flex-direction: column;
+}
+.news-category {
+    color: #007b5e;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.news-date {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.news-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.news-description {
+    color: #6c757d;
+}
+
+.news {
+    position: relative;
+}
+
+.news .gotolink {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.news .gotolink button {
+    padding: 6px;
+}
+
+.container-news {
+    width: 90%;
+    min-height: 90vh;
+    background-color: white;
+    border-radius: 8px;
+    margin: 30px 0px;
+    margin-left: 5%;
+    padding: 20px;
+}
+
+.header-news {
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.btn-action {
+    display: flex;
+    gap: 10px;
+}
+
+.action-detail {
+    margin-left: 30px;
+}
+
+.btn-action button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.header-news h1 {
+    font-size: 1.9em;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.author .profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: var(--primary-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+
+.author .author-name {
+    font-size: 1em;
+}
+
+.author .updated {
+    font-size: 0.7em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-item img {
+        margin-bottom: 20px;
+    }
+}

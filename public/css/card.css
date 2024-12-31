@@ -1,0 +1,49 @@
+@import url("./app.css");
+.info-terbaru {
+    background-color: white;
+    margin: 10px 0px;
+    border-radius: 8px;
+    padding: 15px;
+}
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 15px;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.card {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+}

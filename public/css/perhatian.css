@@ -1,0 +1,39 @@
+.container-perhatian {
+    width: 100%;
+    min-height: 150px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#perhatian {
+    padding: 20px;
+    border: 1px solid #ffae42;
+    border-radius: 8px;
+    background: #fff7e6;
+    font-family: Arial, sans-serif;
+}
+#perhatian h2 {
+    font-size: 24px;
+    color: #d48806;
+    margin-bottom: 10px;
+}
+#perhatian p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+#perhatian ul {
+    list-style-type: circle;
+    margin: 0;
+    padding-left: 20px;
+}
+#perhatian ul li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+#perhatian ul li strong {
+    color: #d48806;
+}
