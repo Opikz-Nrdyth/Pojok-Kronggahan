@@ -125,19 +125,18 @@ const slides = [];
 fetch("/api/slideshow")
     .then((response) => response.json())
     .then((data) => {
-        data.forEach((item) => {
-            slides.push({
-                subtitle: item.title, // Replace with the appropriate data from the API
-                title: item.categories,
-                img: item.thumbnail,
-                route: `/news/${item.id}`,
+        console.log(data);
+
+        if (data) {
+            data?.forEach((item) => {
+                slides?.push({
+                    subtitle: item.title, // Replace with the appropriate data from the API
+                    title: item.categories,
+                    img: item.thumbnail,
+                    route: `/news/${item.id}`,
+                });
             });
-        });
-
-        // Optionally, you can log the updated `slides` array to see the result
-        console.log(slides);
-
-        // If you want to use this data for your slideshow, continue with the logic to render it here
+        }
     })
     .catch((error) => console.error("Error fetching slideshow data:", error));
 

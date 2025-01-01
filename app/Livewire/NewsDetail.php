@@ -23,6 +23,9 @@ class NewsDetail extends Component
     {
         $getNews = News::with(['category_relation', 'user_relation', 'engagements_relation'])
             ->findOrFail($this->id);
+        $engagement = Engagements::where('content_id', $getNews->id)->first();
+        $engagement->clicks += 1;
+        $engagement->save();
 
         $this->news =  [
             'id' => $getNews->id,

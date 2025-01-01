@@ -7,10 +7,13 @@
                 @foreach ($recoment as $news)
                     <div class="news">
                         <div class="news-item">
-                            <a href="/news/{{ $news['id'] }}">
-                                <img src="{{ env('APP_ROUTE_PUBLIC') . asset('storage/' . $news['thumbnail']) }}"
-                                    alt="{{ $news['title'] }}" height="150" width="150" />
-                            </a>
+                            <div class="thumbnail-container">
+                                <a href="/news/{{ $news['id'] }}">
+                                    <img src="{{ env('APP_ROUTE_PUBLIC') . asset('storage/' . $news['thumbnail']) }}"
+                                        alt="{{ $news['title'] }}" height="150" width="150" />
+                                </a>
+                            </div>
+
                             <div class="news-content">
                                 <div class="news-category">
                                     {{ $news['categories'] }}

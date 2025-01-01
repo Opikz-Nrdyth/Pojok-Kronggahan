@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="content-news">
                     {!! $news->content !!}
                 </div>
             </div>

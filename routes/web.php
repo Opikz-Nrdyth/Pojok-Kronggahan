@@ -50,12 +50,14 @@ Route::get('/api/slideshow', function () {
             return [
                 'id' => $newsItem->id,
                 'title' => $newsItem->title,
-                'thumbnail' => env('APP_ROUTE_PUBLIC') . asset('/storage/' . $newsItem->thumbnail),
+                'thumbnail' => env('APP_ROUTE_PUBLIC') . asset('storage/' . $newsItem->thumbnail),
                 'categories' => $newsItem->category_relation->name ?? 'Uncategorized', // Kategori
                 'date' => $newsItem->updated_at->format('Y-m-d'), // Format tanggal
                 'description' => $newsItem->description,
             ];
-        });
+        })
+        ->values() // Reset indeks koleksi agar menjadi array numerik
+        ->toArray(); // Konversi ke array PHP
 
     return response()->json($recoment);
 });
